@@ -316,70 +316,53 @@ function initializeVideoRotation() {
     const image = document.getElementById('heroImage');
     const videos = [
         'public/videos/hero-bg.mp4',
-        'public/videos/hero-bg-3.mp4',
         'public/videos/hero-bg-4.mp4',
-        'public/videos/hero-bg-5.mp4'
+        'public/videos/Shipping-video-01.mp4'
     ];
 
     let currentIndex = 0;
-    let showingImage = true;
-    let imageTimeout = null;
 
-    function showImage() {
-        // Fade out video, fade in image
-        video.style.opacity = '0';
-        image.style.opacity = '1';
-        showingImage = true;
+    function playNextVideo() {
+        currentIndex = (currentIndex + 1) % videos.length;
+        console.log('Playing next video:', videos[currentIndex]);
 
-        // Show image for 3 seconds
-        imageTimeout = setTimeout(() => {
-            showVideo();
-        }, 3000);
-    }
-
-    function showVideo() {
-        showingImage = false;
-
-        // Set video source
+        // Fade out slightly for transition if desired, but direct cut is fine
         video.src = videos[currentIndex];
-        video.load();
-
-        // Fade out image, fade in video
-        image.style.opacity = '0';
-        video.style.opacity = '1';
-
-        // Play video
-        video.play().catch(err => {
-            console.error('Video play error:', err);
-            // If video fails, show image instead
-            showImage();
+        video.play().catch(e => {
+            console.error('Video play error:', e);
+            // Try next one if this fails
+            setTimeout(playNextVideo, 1000);
         });
     }
 
-    function nextMedia() {
-        if (showingImage) {
-            // Currently showing image, next is video
-            showVideo();
-        } else {
-            // Currently showing video, next is image
-            currentIndex = (currentIndex + 1) % videos.length;
-            showImage();
+    if (video) {
+        // Initialize first video
+        video.src = videos[0];
+
+        // Event listeners
+        video.addEventListener('ended', playNextVideo);
+
+        video.addEventListener('playing', function () {
+            // Once playing, ensure video is visible and image is hidden
+            video.style.opacity = '1';
+            if (image) image.style.opacity = '0';
+        });
+
+        video.addEventListener('error', function (e) {
+            console.error('Video loading error:', e);
+            // Skip to next on error
+            playNextVideo();
+        });
+
+        // Attempt initial play
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log('Autoplay prevented or failed:', error);
+                // Fallback to image if autoplay is blocked completely
+                if (image) image.style.opacity = '1';
+            });
         }
-    }
-
-    if (video && image) {
-        // Start with image
-        showImage();
-
-        // When video ends, show image
-        video.addEventListener('ended', function () {
-            nextMedia();
-        });
-
-        video.addEventListener('error', function () {
-            console.error('Video error, showing image');
-            showImage();
-        });
     }
 }
 
