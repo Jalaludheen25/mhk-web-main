@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "company": {
+    "name": "M.H.K Trading & Ship Chandlers LLC",
+    "tagline": "Reliable Ship Chandler Partner Supplying All Ranges of Provisions",
+    "founded": "Founded in 2014",
+    "founder": "Founded by Hariharasudan Gnanasekaran",
+    "location": "United Arab Emirates",
+    "mission": "Our mission is to provide exceptional service, quality products, and innovative solutions to our customers, while maintaining the highest standards of integrity, professionalism, and environmental responsibility."
+  },
+  "contact": {
+    "phone": "+971 4 299 7911",
+    "email": "info@mhkts.ae",
+    "address": "P.O.Box: 111133, Deira, Dubai, United Arab Emirates",
+    "getQuote": "Get a Quote",
+    "contactUs": "Contact Us",
+    "sendMessage": "Send Message"
+  },
+  "categories": {
+    "shipChandling": {
+      "name": "Ship Chandling",
+      "description": "Reliable ship chandler partner supplying fresh, dry, and frozen provisions to ships"
+    },
+    "seafood": {
+      "name": "Seafood",
+      "description": "Leading distributor of high-quality fresh & frozen seafood"
+    },
+    "meat": {
+      "name": "Meat",
+      "description": "High-quality fresh & frozen mutton, beef & poultry"
+    },
+    "spices": {
+      "name": "Spices",
+      "description": "Leading distributor of high-quality spices & spice powders"
+    },
+    "buildingMaterials": {
+      "name": "Building Materials",
+      "description": "Custom-made steel rebar, alloy steel, stainless steel, tool steel, mild steel"
+    },
+    "oilGas": {
+      "name": "Oil & Gas",
+      "description": "Gas processing plant projects and EPC contractor assistance"
+    },
+    "scaffolding": {
+      "name": "Scaffolding Materials",
+      "description": "Certified GI Stainless Steel Tube, Hot Galvanized Scaffold Pipe & Fittings"
+    },
+    "mep": {
+      "name": "MEP",
+      "description": "Mechanical, Electrical, and Plumbing supplies"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "M.H.K Trading & Ship Chandlers",
+      "subtitle": "Your Trusted Partner in Maritime Supply, Trading & Industrial Solutions",
+      "cta": "Explore Our Products"
+    },
+    "certifications": {
+      "title": "Quality Certifications",
+      "iso": "ISO 9001:2015 Certified",
+      "alwaysFresh": "Always Fresh",
+      "halal": "100% Halal",
+      "premium": "Premium Quality"
+    }
+  },
+  "about": {
+    "title": "About MHK",
+    "history": "M H K Trading & Ship Chandlers LLC is a reputable trading company based in the United Arab Emirates, specializing in providing top-quality products and services to the maritime industry, Industrial & Construction Materials, Consumer Goods, Food & Beverages. Since its inception in 2014, our company has been committed to excellence, reliability, and customer satisfaction.",
+    "growth": "Founded by Hariharasudan Gnanasekaran, our company has grown steadily over the years, establishing itself as a trusted partner for ship owners, operators, and suppliers. With a strong foundation in trading and ship chandling, we have expanded our portfolio to cater to the diverse needs of the maritime, & general trading sector.",
+    "certifications": "ISO 9001:2015 Quality Management System"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "category": "Product Category",
+    "message": "Message",
+    "selectCategory": "Select a category",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "success": "Thank you! We will contact you soon.",
+    "error": "Unable to send your message. Please try again or contact us directly."
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "copyright": "© 2024 M.H.K Trading & Ship Chandlers LLC. All rights reserved."
+  }
+}

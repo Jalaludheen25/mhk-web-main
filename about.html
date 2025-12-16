@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - M.H.K Trading & Ship Chandlers LLC</title>
+    <meta name="description"
+        content="Learn about M.H.K Trading & Ship Chandlers LLC - 14+ years of excellence in maritime supply and industrial solutions. Founded in 2014 by Hariharasudan Gnanasekaran.">
+    <meta name="keywords"
+        content="about MHK, company history, maritime expertise, ship chandling experience, UAE trading company">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        accent: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        golden: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50" id="header">
+
+
+        <!-- Main Navigation -->
+        <div class="bg-primary-600 shadow-none border-b-4 border-golden-400" id="headerContainer">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers"
+                            class="h-12 md:h-14 w-auto">
+                        <!-- Text removed as per rebrand -->
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-white p-2" id="mobileMenuBtn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center space-x-1">
+                        <a href="index.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent"
+                            data-key="nav.home">
+                            Home
+                        </a>
+
+                        <!-- About Dropdown -->
+                        <div class="relative group">
+                            <button
+                                class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                About <i
+                                    class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </button>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <a href="about.html"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-building text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.companyOverview">Company Overview
+                                            </div>
+                                            <div class="text-xs text-gray-500" data-key="nav.companyOverviewDesc">Our
+                                                story & mission</div>
+                                        </div>
+                                    </a>
+                                    <a href="about.html#leadership"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-users text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.leadership">Leadership Team</div>
+                                            <div class="text-xs text-gray-500" data-key="nav.leadershipDesc">Meet our
+                                                executives</div>
+                                        </div>
+                                    </a>
+                                    <a href="about.html#certifications"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-certificate text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.certifications">Certifications</div>
+                                            <div class="text-xs text-gray-500" data-key="nav.certificationsDesc">Quality
+                                                standards</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Dropdown -->
+                        <div class="relative group">
+                            <a href="products.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                Products <i class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </a>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <div class="grid grid-cols-1 gap-1">
+                                        <a href="fresh-provisions.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-apple-alt text-green-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.freshProvisions">Fresh Provisions
+                                                </div>
+                                                <div class="text-xs text-gray-500" data-key="nav.freshProvisionsDesc">
+                                                    Fruits, Vegetables & Dairy</div>
+                                            </div>
+                                        </a>
+                                        <a href="grains-pulses.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-utensils text-amber-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.grains">Grains & Pulses</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.grainsDesc">Rice,
+                                                    Pulses & Cereals</div>
+                                            </div>
+                                        </a>
+                                        <a href="spices.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-pepper-hot text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.spices">Spices & Seasonings</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.spicesDesc">
+                                                    Herbs & Blends</div>
+                                            </div>
+                                        </a>
+                                        <a href="meat-poultry.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-drumstick-bite text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.meat">Meat & Poultry</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.meatDesc">Fresh &
+                                                    Frozen</div>
+                                            </div>
+                                        </a>
+                                        <a href="seafood.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-fish text-blue-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.seafood">Seafood</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.seafoodDesc">Fresh &
+                                                    Marine Products</div>
+                                            </div>
+                                        </a>
+                                        <a href="processed-foods.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-box-open text-orange-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.processed">Processed Foods</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.processedDesc">
+                                                    Canned & Packaged</div>
+                                            </div>
+                                        </a>
+                                        <a href="ship-chandling.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-ship text-gray-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.shipChandling">Ship Chandling
+                                                </div>
+                                                <div class="text-xs text-gray-500" data-key="nav.shipChandlingDesc">
+                                                    Vessel Supplies</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Link -->
+                        <a href="logistics.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent" data-key="nav.services">
+                            Services
+                        </a>
+
+                        <a href="contact.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent"
+                            data-key="nav.contact">
+                            Contact
+                        </a>
+
+                        <!-- CTA Button -->
+                        <a href="contact.html"
+                            class="ml-4 bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold border-2 border-golden-400 hover:bg-golden-50 transition-all duration-300 shadow-md hover:shadow-lg">
+                            Get Quote
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white border-t border-gray-200 shadow-lg hidden" id="mobileMenu">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="space-y-2">
+                    <a href="index.html"
+                        class="block px-4 py-3 text-primary-700 bg-primary-50 rounded-lg font-semibold">Home</a>
+                    <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">About Us</a>
+                    <a href="products.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Products</a>
+                    <a href="services.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Services</a>
+                    <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Contact</a>
+                    <div class="pt-4 border-t border-gray-200">
+                        <a href="contact.html"
+                            class="block bg-accent-500 text-white text-center px-4 py-3 rounded-lg font-semibold">Get
+                            Quote</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="bg-gradient-to-r from-primary-600 to-primary-800 py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center text-white">
+                    <h1 class="font-display text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">About M.H.K Trading
+                        & Ship Chandlers</h1>
+                    <p class="text-xl text-primary-100 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                        Building maritime excellence since 2014 with unwavering commitment to quality, reliability, and
+                        customer satisfaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <!-- Content -->
+                        <div data-aos="fade-right">
+                            <div class="inline-flex items-center bg-primary-50 rounded-full px-4 py-2 mb-6">
+                                <i class="fas fa-anchor text-primary-600 mr-2"></i>
+                                <span class="text-primary-700 font-medium">Our Story</span>
+                            </div>
+                            <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                                Excellence in Maritime Supply & Trading
+                            </h2>
+                            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                                M.H.K Trading & Ship Chandlers LLC stands as a beacon of reliability in the maritime
+                                industry.
+                                Founded in 2014 by visionary entrepreneur Hariharasudan Gnanasekaran, our company has
+                                evolved
+                                from a local ship chandling service to a comprehensive maritime and industrial solutions
+                                provider.
+                            </p>
+                            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                                With over 14 years of dedicated service, we have built an unparalleled reputation for
+                                delivering
+                                exceptional quality products, innovative solutions, and reliable services to the
+                                maritime,
+                                construction, and industrial sectors across the UAE and beyond.
+                            </p>
+
+                            <!-- Key Achievements -->
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-600 mb-2">500+</div>
+                                    <div class="text-sm text-gray-600">Vessels Served</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-600 mb-2">50+</div>
+                                    <div class="text-sm text-gray-600">Countries Reached</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Image/Stats -->
+                        <div data-aos="fade-left" data-aos-delay="200">
+                            <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8">
+                                <h3 class="font-display text-2xl font-bold text-gray-900 mb-8 text-center">Our Impact
+                                </h3>
+
+                                <div class="space-y-6">
+                                    <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                                        <div class="flex items-center">
+                                            <div
+                                                class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                <i class="fas fa-ship text-primary-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-900">Maritime Operations</div>
+                                                <div class="text-sm text-gray-600">Ship chandling & provisions</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-2xl font-bold text-primary-600">95%</div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                                        <div class="flex items-center">
+                                            <div
+                                                class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                                                <i class="fas fa-clock text-accent-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-900">On-Time Delivery</div>
+                                                <div class="text-sm text-gray-600">Punctual service record</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-2xl font-bold text-accent-600">98%</div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                                        <div class="flex items-center">
+                                            <div
+                                                class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                                <i class="fas fa-thumbs-up text-green-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-900">Customer Satisfaction</div>
+                                                <div class="text-sm text-gray-600">Client retention rate</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-2xl font-bold text-green-600">97%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission, Vision, Values -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Foundation</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Built on strong principles and driven by a clear vision for maritime excellence.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Mission -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                                <i class="fas fa-bullseye text-2xl text-primary-600"></i>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4 text-center">Our Mission</h3>
+                            <p class="text-gray-600 text-center leading-relaxed">
+                                To provide exceptional service, quality products, and innovative solutions to our
+                                customers,
+                                while maintaining the highest standards of integrity, professionalism, and environmental
+                                responsibility.
+                            </p>
+                        </div>
+
+                        <!-- Vision -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                                <i class="fas fa-eye text-2xl text-accent-600"></i>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4 text-center">Our Vision</h3>
+                            <p class="text-gray-600 text-center leading-relaxed">
+                                To be the leading maritime supply and trading company in the region, recognized for our
+                                commitment to excellence, innovation, and sustainable business practices.
+                            </p>
+                        </div>
+
+                        <!-- Values -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div
+                                class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                                <i class="fas fa-heart text-2xl text-green-600"></i>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4 text-center">Our Values</h3>
+                            <div class="space-y-2 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Integrity & Transparency</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Quality Excellence</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Customer Focus</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Innovation & Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
+                        <p class="text-xl text-gray-600">Milestones that shaped our growth and success</p>
+                    </div>
+
+                    <div class="relative">
+                        <!-- Timeline Line -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200"></div>
+
+                        <!-- Timeline Items -->
+                        <div class="space-y-12">
+                            <!-- 2014 -->
+                            <div class="relative flex items-center" data-aos="fade-right">
+                                <div class="flex-1 text-right pr-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                                        <h3 class="font-bold text-lg text-gray-900 mb-2">Company Founded</h3>
+                                        <p class="text-gray-600">M.H.K Trading & Ship Chandlers LLC established by
+                                            Hariharasudan Gnanasekaran</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg">
+                                </div>
+                                <div class="flex-1 pl-8">
+                                    <div class="text-2xl font-bold text-primary-600">2014</div>
+                                </div>
+                            </div>
+
+                            <!-- 2015 -->
+                            <div class="relative flex items-center" data-aos="fade-left">
+                                <div class="flex-1 text-right pr-8">
+                                    <div class="text-2xl font-bold text-primary-600">2015</div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg">
+                                </div>
+                                <div class="flex-1 pl-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                                        <h3 class="font-bold text-lg text-gray-900 mb-2">ISO Certification</h3>
+                                        <p class="text-gray-600">Achieved ISO 9001:2015 certification for quality
+                                            management systems</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2018 -->
+                            <div class="relative flex items-center" data-aos="fade-right">
+                                <div class="flex-1 text-right pr-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                                        <h3 class="font-bold text-lg text-gray-900 mb-2">Regional Expansion</h3>
+                                        <p class="text-gray-600">Extended operations across GCC countries and
+                                            established key partnerships</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg">
+                                </div>
+                                <div class="flex-1 pl-8">
+                                    <div class="text-2xl font-bold text-primary-600">2018</div>
+                                </div>
+                            </div>
+
+                            <!-- 2024 -->
+                            <div class="relative flex items-center" data-aos="fade-left">
+                                <div class="flex-1 text-right pr-8">
+                                    <div class="text-2xl font-bold text-primary-600">2024</div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent-600 rounded-full border-4 border-white shadow-lg">
+                                </div>
+                                <div class="flex-1 pl-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                                        <h3 class="font-bold text-lg text-gray-900 mb-2">Digital Transformation</h3>
+                                        <p class="text-gray-600">Launched digital platform and enhanced customer
+                                            experience with technology</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Leadership Team</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Meet our experienced leadership team driving innovation and excellence in the maritime
+                            industry.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Founder & CEO -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                class="h-48 bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+                                <i class="fas fa-user-tie text-6xl text-white"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Hariharasudan Gnanasekaran
+                                </h3>
+                                <p class="text-primary-600 font-semibold mb-4">Founder & CEO</p>
+                                <p class="text-gray-600 text-sm">
+                                    Visionary leader with 14+ years of maritime industry experience, driving company
+                                    growth and innovation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Operations Director -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                class="h-48 bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center">
+                                <i class="fas fa-cogs text-6xl text-white"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Operations Director</h3>
+                                <p class="text-accent-600 font-semibold mb-4">Operations & Logistics</p>
+                                <p class="text-gray-600 text-sm">
+                                    Expert in maritime operations and supply chain management, ensuring seamless service
+                                    delivery.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Quality Manager -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div
+                                class="h-48 bg-gradient-to-br from-golden-500 to-golden-700 flex items-center justify-center">
+                                <i class="fas fa-certificate text-6xl text-white"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Quality Assurance Manager
+                                </h3>
+                                <p class="text-golden-600 font-semibold mb-4">Quality & Compliance</p>
+                                <p class="text-gray-600 text-sm">
+                                    Dedicated to maintaining ISO standards and ensuring excellence in every product and
+                                    service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12" data-aos="fade-up">
+                        <a href="leadership.html"
+                            class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                            <i class="fas fa-users mr-2"></i>
+                            Meet the Full Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Certifications &
+                            Quality Standards</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Our commitment to excellence is validated by international quality certifications and
+                            standards.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- ISO 9001:2015 -->
+                        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-certificate text-3xl text-green-600"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-gray-900 mb-3">ISO 9001:2015</h3>
+                            <p class="text-gray-600 text-sm">Quality Management System Certification</p>
+                        </div>
+
+                        <!-- HACCP -->
+                        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-clipboard-check text-3xl text-blue-600"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-gray-900 mb-3">HACCP Certified</h3>
+                            <p class="text-gray-600 text-sm">Food Safety Management Certification</p>
+                        </div>
+
+                        <!-- Halal -->
+                        <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div
+                                class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-check-circle text-3xl text-purple-600"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-gray-900 mb-3">Halal Certified</h3>
+                            <p class="text-gray-600 text-sm">Islamic Food Standards Compliance</p>
+                        </div>
+
+                        <!-- Environmental -->
+                        <div class="bg-gradient-to-br from-teal-50 to-green-50 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div
+                                class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-leaf text-3xl text-teal-600"></i>
+                            </div>
+                            <h3 class="font-display text-lg font-bold text-gray-900 mb-3">Environmental Compliance</h3>
+                            <p class="text-gray-600 text-sm">Sustainable Business Practices</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12" data-aos="fade-up">
+                        <a href="certifications.html"
+                            class="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                            <i class="fas fa-award mr-2"></i>
+                            View All Certifications
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center text-white" data-aos="fade-up">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Ready to Partner with Us?</h2>
+                    <p class="text-xl text-primary-100 mb-8 leading-relaxed">
+                        Join hundreds of satisfied clients who trust MHK for their maritime and industrial needs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center bg-accent-500 text-white hover:bg-accent-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                            <i class="fas fa-phone mr-2"></i>
+                            Get in Touch
+                        </a>
+                        <a href="products.html"
+                            class="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-primary-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                            <i class="fas fa-box mr-2"></i>
+                            View Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers" class="h-12 mb-4">
+                    <p class="text-gray-300 mb-4">M.H.K Trading & Ship Chandlers LLC</p>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Your trusted partner in maritime supply, trading & industrial solutions since 2014.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="products.html"
+                                class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+971 4 299 7911</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@mhkts.ae</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>P.O.Box: 111133, Deira, Dubai, UAE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 M.H.K Trading & Ship Chandlers LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

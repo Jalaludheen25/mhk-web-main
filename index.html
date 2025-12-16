@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.H.K Trading & Ship Chandlers LLC - Leading Maritime & Industrial Solutions Provider</title>
+    <meta name="description"
+        content="M.H.K Trading & Ship Chandlers LLC - Premier maritime supply, ship chandling, seafood trading, and industrial solutions provider in UAE. ISO 9001:2015 certified with 14+ years of excellence.">
+    <meta name="keywords"
+        content="ship chandling UAE, maritime supply Dubai, seafood trading, building materials, industrial solutions, ISO certified, ship provisions, marine supplies">
+    <meta name="author" content="M.H.K Trading & Ship Chandlers LLC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="M.H.K Trading & Ship Chandlers LLC - Leading Maritime Solutions">
+    <meta property="og:description"
+        content="Premier maritime supply and industrial solutions provider in UAE. ISO 9001:2015 certified.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mhkts.ae">
+    <meta property="og:image" content="public/images/logo/Logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/images/logo/favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        accent: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        golden: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s infinite'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50" id="header">
+
+
+        <!-- Main Navigation -->
+        <div class="bg-primary-600 shadow-none border-b-4 border-golden-400" id="headerContainer">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers"
+                            class="h-12 md:h-14 w-auto">
+                        <!-- Text removed as per rebrand -->
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-white p-2" id="mobileMenuBtn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center space-x-1">
+                        <a href="index.html"
+                            class="nav-item active px-4 py-2 text-white font-semibold transition-all duration-300 border-b-3 border-golden-400"
+                            data-key="nav.home">
+                            Home
+                        </a>
+
+                        <!-- About Dropdown -->
+                        <div class="relative group">
+                            <button
+                                class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                About <i
+                                    class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </button>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <a href="about.html"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-building text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.companyOverview">Company Overview
+                                            </div>
+                                            <div class="text-xs text-gray-500" data-key="nav.companyOverviewDesc">Our
+                                                story & mission</div>
+                                        </div>
+                                    </a>
+                                    <a href="leadership.html"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-users text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.leadership">Leadership Team</div>
+                                            <div class="text-xs text-gray-500" data-key="nav.leadershipDesc">Meet our
+                                                executives</div>
+                                        </div>
+                                    </a>
+                                    <a href="certifications.html"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-certificate text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium" data-key="nav.certifications">Certifications</div>
+                                            <div class="text-xs text-gray-500" data-key="nav.certificationsDesc">Quality
+                                                standards</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Dropdown -->
+                        <div class="relative group">
+                            <a href="products.html"
+                                class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                Products <i
+                                    class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </a>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <div class="grid grid-cols-1 gap-1">
+                                        <a href="fresh-provisions.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-apple-alt text-green-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.freshProvisions">Fresh Provisions
+                                                </div>
+                                                <div class="text-xs text-gray-500" data-key="nav.freshProvisionsDesc">
+                                                    Fruits, Vegetables & Dairy</div>
+                                            </div>
+                                        </a>
+                                        <a href="grains-pulses.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-utensils text-amber-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.grains">Grains & Pulses</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.grainsDesc">Rice,
+                                                    Pulses & Cereals</div>
+                                            </div>
+                                        </a>
+                                        <a href="spices.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-pepper-hot text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.spices">Spices & Seasonings</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.spicesDesc">
+                                                    Herbs & Blends</div>
+                                            </div>
+                                        </a>
+                                        <a href="meat-poultry.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-drumstick-bite text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.meat">Meat & Poultry</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.meatDesc">Fresh &
+                                                    Frozen</div>
+                                            </div>
+                                        </a>
+                                        <a href="seafood.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-fish text-blue-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.seafood">Seafood</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.seafoodDesc">Fresh &
+                                                    Marine Products</div>
+                                            </div>
+                                        </a>
+                                        <a href="processed-foods.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-box-open text-orange-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.processed">Processed Foods</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.processedDesc">
+                                                    Canned & Packaged</div>
+                                            </div>
+                                        </a>
+                                        <a href="ship-chandling.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-ship text-gray-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.shipChandling">Ship Chandling
+                                                </div>
+                                                <div class="text-xs text-gray-500" data-key="nav.shipChandlingDesc">
+                                                    Vessel Supplies</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="logistics.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent"
+                            data-key="nav.services">
+                            Services
+                        </a>
+
+                        <a href="contact.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent"
+                            data-key="nav.contact">
+                            Contact
+                        </a>
+
+                        <!-- CTA Button -->
+                        <a href="contact.html"
+                            class="ml-4 bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold border-2 border-golden-400 hover:bg-golden-50 transition-all duration-300 shadow-md hover:shadow-lg">
+                            Get Quote
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white border-t border-gray-200 shadow-lg hidden" id="mobileMenu">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="space-y-2">
+                    <a href="index.html"
+                        class="block px-4 py-3 text-primary-700 bg-primary-50 rounded-lg font-semibold">Home</a>
+                    <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">About Us</a>
+                    <a href="products.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Products</a>
+                    <a href="services.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Services</a>
+                    <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Contact</a>
+                    <div class="pt-4 border-t border-gray-200">
+                        <a href="contact.html"
+                            class="block bg-accent-500 text-white text-center px-4 py-3 rounded-lg font-semibold">Get
+                            Quote</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-[85vh] overflow-hidden -mt-32">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 z-0">
+                <!-- Image Background -->
+                <img id="heroImage" src="public/images/products/1.jpg" alt="MHK Trading"
+                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+
+                <!-- Video Background -->
+                <video id="heroVideo" muted playsinline preload="auto"
+                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                    <source src="public/videos/hero-bg.mp4" type="video/mp4">
+                </video>
+
+                <!-- Simple Dark Overlay for Text Visibility -->
+                <div class="absolute inset-0 bg-black/30"></div>
+            </div>
+
+            <!-- Content with Higher Z-Index REMOVED for clean video look -->
+            <div class="relative z-30 h-full flex items-center justify-center">
+                <!-- Optional: Scroll down hint or minimal branding if needed, but keeping it clean for now -->
+            </div>
+        </section>
+
+        <!-- New About / Intro Section (formerly Hero Content) -->
+        <section id="about-intro"
+            class="py-20 bg-gradient-to-br from-gray-50 via-amber-50/30 to-golden-100/40 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Hero Content Moved Here -->
+                    <div class="text-center space-y-8">
+
+                        <!-- Premium Badge -->
+                        <div class="flex justify-center">
+                            <div
+                                class="inline-flex items-center bg-primary-50 border border-primary-100 rounded-full px-6 py-3 shadow-md">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></div>
+                                    <i class="fas fa-award text-accent-600 text-lg"></i>
+                                    <span class="text-primary-900 font-bold text-sm"
+                                        data-key="home.certifications.iso">ISO 9001:2015 CERTIFIED</span>
+                                    <div class="w-px h-4 bg-gray-300"></div>
+                                    <span class="text-accent-700 font-semibold text-sm">SINCE 2014</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Title -->
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <h1 class="font-display font-black text-primary-900">
+                                <span class="block text-4xl md:text-5xl lg:text-6xl mb-2" data-key="home.hero.title">
+                                    PREMIUM FOOD TRADING & SHIP CHANDLERS
+                                </span>
+                            </h1>
+
+                            <!-- Professional Tagline -->
+                            <div class="flex items-center justify-center space-x-4 mt-4">
+                                <div class="w-16 h-px bg-gradient-to-r from-transparent via-accent-500 to-transparent">
+                                </div>
+                                <p class="text-lg md:text-xl text-primary-600 font-medium tracking-wider uppercase"
+                                    data-key="company.tagline">
+                                    Global Food Excellence
+                                </p>
+                                <div class="w-16 h-px bg-gradient-to-r from-transparent via-accent-500 to-transparent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enhanced Subtitle -->
+                        <div>
+                            <p class="text-lg md:text-xl lg:text-2xl text-gray-600 font-light leading-relaxed max-w-4xl mx-auto"
+                                data-key="home.hero.subtitle">
+                                Your Trusted Partner in Global Food Trading, Maritime Supply & Industrial Solutions
+                            </p>
+                        </div>
+
+                        <!-- Key Value Propositions -->
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <div
+                                        class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-ship text-accent-600 text-xl"></i>
+                                    </div>
+                                    <div class="text-primary-900 font-bold text-lg">500+ Vessels</div>
+                                    <div class="text-gray-500 text-sm">Served Globally</div>
+                                </div>
+
+                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <div
+                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-clock text-blue-600 text-xl"></i>
+                                    </div>
+                                    <div class="text-primary-900 font-bold text-lg">24/7 Support</div>
+                                    <div class="text-gray-500 text-sm">Always Available</div>
+                                </div>
+
+                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <div
+                                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-certificate text-green-600 text-xl"></i>
+                                    </div>
+                                    <div class="text-primary-900 font-bold text-lg">ISO Certified</div>
+                                    <div class="text-gray-500 text-sm">Quality Standards</div>
+                                </div>
+
+                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                                    <div
+                                        class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-globe text-purple-600 text-xl"></i>
+                                    </div>
+                                    <div class="text-primary-900 font-bold text-lg">50+ Countries</div>
+                                    <div class="text-gray-500 text-sm">Global Reach</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enhanced CTA Buttons -->
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="products.html"
+                                    class="group relative inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:bg-primary-700 hover:shadow-xl hover:-translate-y-1">
+                                    <i class="fas fa-rocket mr-3 text-lg group-hover:animate-bounce"></i>
+                                    <span data-key="home.hero.cta">Explore Solutions</span>
+                                </a>
+
+                                <a href="contact.html"
+                                    class="group relative inline-flex items-center justify-center border-2 border-primary-600 text-primary-600 hover:bg-primary-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-md hover:-translate-y-1">
+                                    <i class="fas fa-phone mr-3 text-lg group-hover:animate-pulse"></i>
+                                    <span data-key="contact.getQuote">Get Quote</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Scroll Indicator -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10" data-aos="fade-up"
+                data-aos-delay="500">
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="text-white/60 text-xs mb-2 group-hover:text-white transition-colors">Discover More</div>
+                    <div
+                        class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center group-hover:border-white transition-colors">
+                        <div
+                            class="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce group-hover:bg-white transition-colors">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!-- Premium Food Products Section (Green Theme) -->
+        <section class="py-20 bg-emerald-50 border-t border-emerald-100">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-emerald-600 font-bold tracking-wider uppercase mb-2 block">Our Specialties</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Premium Food Products
+                    </h2>
+
+                    <!-- Rice Product Showcase Carousel -->
+                    <div class="mb-12 relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+                            <!-- Background Video -->
+                            <video autoplay muted loop playsinline
+                                class="absolute inset-0 w-full h-full object-cover -z-10">
+                                <source src="public/videos/rice-video.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+
+                            <div class="relative z-10">
+                                <!-- Title -->
+                                <div class="text-center mb-8">
+                                    <h3 class="text-2xl md:text-3xl font-bold text-emerald-800 mb-2">Our Premium Rice
+                                        Collection</h3>
+                                    <p class="text-emerald-600">Discover world-class rice varieties sourced from the
+                                        finest farms</p>
+                                </div>
+
+                                <!-- Carousel Container -->
+                                <div class="relative max-w-5xl mx-auto">
+                                    <div class="flex items-center justify-center">
+                                        <!-- Left Arrow -->
+                                        <button onclick="previousRice()"
+                                            class="absolute left-0 z-20 w-12 h-12 bg-white rounded-full shadow-lg hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center group">
+                                            <i
+                                                class="fas fa-chevron-left text-emerald-600 group-hover:text-emerald-700"></i>
+                                        </button>
+
+                                        <!-- Product Display Area -->
+                                        <div class="flex-1 px-16">
+                                            <div id="riceCarousel"
+                                                class="relative h-96 flex items-center justify-center">
+                                                <!-- Rice Product 1 - Basmati -->
+                                                <div
+                                                    class="rice-item active absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
+                                                    <div class="text-center mb-4">
+                                                        <span
+                                                            class="inline-block bg-emerald-100 text-emerald-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Premium
+                                                            Quality</span>
+                                                    </div>
+                                                    <img src="public/images/products/basmati-rice.png"
+                                                        alt="Basmati Rice"
+                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
+                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Premium Basmati
+                                                        Rice</h4>
+                                                    <p class="text-emerald-600 max-w-md">Long grain aromatic rice,
+                                                        perfect for biryanis and special occasions</p>
+                                                </div>
+
+                                                <!-- Rice Product 2 - Jasmine -->
+                                                <div
+                                                    class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
+                                                    <div class="text-center mb-4">
+                                                        <span
+                                                            class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Fragrant</span>
+                                                    </div>
+                                                    <img src="public/images/products/jasmine-rice.png"
+                                                        alt="Jasmine Rice"
+                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
+                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Thai Jasmine
+                                                        Rice</h4>
+                                                    <p class="text-emerald-600 max-w-md">Naturally fragrant rice with a
+                                                        delicate floral aroma</p>
+                                                </div>
+
+                                                <!-- Rice Product 3 - Sona Masoori -->
+                                                <div
+                                                    class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
+                                                    <div class="text-center mb-4">
+                                                        <span
+                                                            class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Lightweight</span>
+                                                    </div>
+                                                    <img src="public/images/products/sona-masoori.png"
+                                                        alt="Sona Masoori Rice"
+                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
+                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Sona Masoori
+                                                        Rice</h4>
+                                                    <p class="text-emerald-600 max-w-md">Light and aromatic, ideal for
+                                                        everyday cooking</p>
+                                                </div>
+
+                                                <!-- Rice Product 4 - Brown Rice -->
+                                                <div
+                                                    class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
+                                                    <div class="text-center mb-4">
+                                                        <span
+                                                            class="inline-block bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Organic</span>
+                                                    </div>
+                                                    <img src="public/images/products/brown-rice.png" alt="Brown Rice"
+                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
+                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Organic Brown
+                                                        Rice</h4>
+                                                    <p class="text-emerald-600 max-w-md">Nutritious whole grain rice
+                                                        rich in fiber and nutrients</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right Arrow -->
+                                        <button onclick="nextRice()"
+                                            class="absolute right-0 z-20 w-12 h-12 bg-white rounded-full shadow-lg hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center group">
+                                            <i
+                                                class="fas fa-chevron-right text-emerald-600 group-hover:text-emerald-700"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Indicators -->
+                                    <div class="flex justify-center gap-2 mt-8">
+                                        <button onclick="showRice(0)"
+                                            class="rice-indicator w-3 h-3 rounded-full bg-emerald-600 transition-all duration-300"></button>
+                                        <button onclick="showRice(1)"
+                                            class="rice-indicator w-3 h-3 rounded-full bg-emerald-300 transition-all duration-300"></button>
+                                        <button onclick="showRice(2)"
+                                            class="rice-indicator w-3 h-3 rounded-full bg-emerald-300 transition-all duration-300"></button>
+                                        <button onclick="showRice(3)"
+                                            class="rice-indicator w-3 h-3 rounded-full bg-emerald-300 transition-all duration-300"></button>
+                                    </div>
+                                </div>
+
+                                <!-- Call to Action -->
+                                <div class="text-center mt-8">
+                                    <a href="products.html"
+                                        class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                                        <i class="fas fa-shopping-bag mr-2"></i>
+                                        Explore All Rice Varieties
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-xl text-emerald-700 max-w-3xl mx-auto">
+                        Sourcing the finest quality food products from around the globe to ensure freshness and
+                        excellence.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- 1. Seafood -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-6">
+                            <div class="relative overflow-hidden rounded-xl mb-6">
+                                <img src="public/images/products/fish.jpg" alt="Seafood"
+                                    class="w-full h-56 object-cover">
+                            </div>
+                            <a href="seafood.html">
+                                <h3
+                                    class="font-display text-2xl font-bold text-emerald-800 mb-4 hover:text-emerald-600 transition-colors cursor-pointer">
+                                    Seafood</h3>
+                            </a>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="seafood.html" class="hover:text-emerald-700 transition-colors">Fresh
+                                        Fish</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="seafood.html" class="hover:text-emerald-700 transition-colors">Frozen
+                                        Shrimps</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="seafood.html" class="hover:text-emerald-700 transition-colors">Premium
+                                        Lobsters</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="seafood.html" class="hover:text-emerald-700 transition-colors">Marine
+                                        Products</a>
+                                </li>
+                            </ul>
+                            <a href="seafood.html"
+                                class="inline-flex items-center text-emerald-700 hover:text-emerald-800 font-semibold text-sm">
+                                <i class="fas fa-plus text-xs mr-2"></i> View all
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Meat -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-6">
+                            <div class="relative overflow-hidden rounded-xl mb-6">
+                                <img src="public/images/products/meat.jpg" alt="Meat" class="w-full h-56 object-cover">
+                            </div>
+                            <a href="meat-poultry.html">
+                                <h3
+                                    class="font-display text-2xl font-bold text-emerald-800 mb-4 hover:text-emerald-600 transition-colors cursor-pointer">
+                                    Meat & Poultry</h3>
+                            </a>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="meat-poultry.html" class="hover:text-emerald-700 transition-colors">Premium
+                                        Beef</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="meat-poultry.html" class="hover:text-emerald-700 transition-colors">Fresh
+                                        Mutton</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="meat-poultry.html" class="hover:text-emerald-700 transition-colors">Halal
+                                        Chicken</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="meat-poultry.html" class="hover:text-emerald-700 transition-colors">Frozen
+                                        Varieties</a>
+                                </li>
+                            </ul>
+                            <a href="meat-poultry.html"
+                                class="inline-flex items-center text-emerald-700 hover:text-emerald-800 font-semibold text-sm">
+                                <i class="fas fa-plus text-xs mr-2"></i> View all
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Spices -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-6">
+                            <div class="relative overflow-hidden rounded-xl mb-6">
+                                <img src="public/images/products/spices.jpg" alt="Spices"
+                                    class="w-full h-56 object-cover">
+                            </div>
+                            <a href="products.html">
+                                <h3
+                                    class="font-display text-2xl font-bold text-emerald-800 mb-4 hover:text-emerald-600 transition-colors cursor-pointer">
+                                    Spices</h3>
+                            </a>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="spices.html" class="hover:text-emerald-700 transition-colors">Whole
+                                        Spices</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="spices.html" class="hover:text-emerald-700 transition-colors">Spice
+                                        Powders</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="spices.html" class="hover:text-emerald-700 transition-colors">Fresh
+                                        Herbs</a>
+                                </li>
+                                <li class="flex items-center text-gray-700">
+                                    <i class="fas fa-chevron-right text-emerald-600 text-xs mr-3"></i>
+                                    <a href="spices.html" class="hover:text-emerald-700 transition-colors">Premium
+                                        Seasonings</a>
+                                </li>
+                            </ul>
+                            <a href="spices.html"
+                                class="inline-flex items-center text-emerald-700 hover:text-emerald-800 font-semibold text-sm">
+                                <i class="fas fa-plus text-xs mr-2"></i> View all
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industrial Solutions Section (Distinct Theme) -->
+        <section class="py-20 bg-gray-50 border-t border-gray-200">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-gray-500 font-bold tracking-wider uppercase mb-2 block">Industrial Division</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Industrial Solutions</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Comprehensive supply solutions for the Construction, Oil & Gas, and Marine sectors.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- 4. Oil & Gas -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden h-56">
+                            <img src="public/images/products/oil-gas.jpg" alt="Oil & Gas"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-oil-can text-blue-600 text-2xl mr-3"></i>
+                                <a href="oil-gas.html">
+                                    <h3
+                                        class="font-display text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors cursor-pointer">
+                                        Oil & Gas</h3>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Execution of gas processing plant projects and assisting main EPC Contractors.
+                            </p>
+                            <a href="oil-gas.html" class="text-blue-600 font-medium hover:text-blue-800 text-sm">Learn
+                                More
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- 5. Building Materials -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden h-56">
+                            <img src="public/images/products/building.jpg" alt="Building Materials"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-hard-hat text-orange-600 text-2xl mr-3"></i>
+                                <a href="building-materials.html">
+                                    <h3
+                                        class="font-display text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors cursor-pointer">
+                                        Building Materials</h3>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Custom made Steel rebar, Alloy steel, Stainless steel, Tool steel, Mild steel Etc.
+                            </p>
+                            <a href="building-materials.html"
+                                class="text-orange-600 font-medium hover:text-orange-800 text-sm">Learn More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- 6. Scaffolding -->
+                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden h-56">
+                            <img src="public/images/products/scaffolding.jpg" alt="Scaffolding"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-layer-group text-yellow-600 text-2xl mr-3"></i>
+                                <a href="scaffolding.html">
+                                    <h3
+                                        class="font-display text-xl font-bold text-gray-900 hover:text-yellow-600 transition-colors cursor-pointer">
+                                        Scaffolding Materials</h3>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Certified GI Stainless Steel Tube, Hot Galvanized Scaffold Pipe & Fittings.
+                            </p>
+                            <a href="scaffolding.html"
+                                class="text-yellow-600 font-medium hover:text-yellow-800 text-sm">Learn More
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-20 bg-primary-600 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8">Our Mission</h2>
+                    <p class="text-xl leading-relaxed" data-key="company.mission">
+                        Our mission is to provide exceptional service, quality products, and innovative solutions to
+                        our customers, while maintaining the highest standards of integrity, professionalism, and
+                        environmental responsibility.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-key="home.certifications.title">
+                        Quality Certifications</h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900" data-key="home.certifications.iso">ISO 9001:2015
+                            Certified</h3>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-leaf text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900" data-key="home.certifications.alwaysFresh">Always
+                            Fresh</h3>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900" data-key="home.certifications.halal">100% Halal</h3>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-star text-2xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900" data-key="home.certifications.premium">Premium
+                            Quality</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-key="about.title">About
+                            MHK</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed" data-key="about.history">
+                                M H K Trading & Ship Chandlers LLC is a reputable trading company based in the
+                                United Arab Emirates, specializing in providing top-quality products and services to
+                                the maritime industry, Industrial & Construction Materials, Consumer Goods, Food &
+                                Beverages. Since its inception in 2014, our company has been committed to
+                                excellence, reliability, and customer satisfaction.
+                            </p>
+                            <p class="text-gray-600 mb-6 leading-relaxed" data-key="about.growth">
+                                Founded by Hariharasudan Gnanasekaran, our company has grown steadily over the
+                                years, establishing itself as a trusted partner for ship owners, operators, and
+                                suppliers. With a strong foundation in trading and ship chandling, we have expanded
+                                our portfolio to cater to the diverse needs of the maritime, & general trading
+                                sector.
+                            </p>
+
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-semibold text-gray-900 mb-2">Key Facts</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li><i class="fas fa-calendar text-primary-600 mr-2"></i><span
+                                            data-key="company.founded">Founded in 2014</span></li>
+                                    <li><i class="fas fa-user text-primary-600 mr-2"></i><span
+                                            data-key="company.founder">Founded by Hariharasudan Gnanasekaran</span>
+                                    </li>
+                                    <li><i class="fas fa-map-marker-alt text-primary-600 mr-2"></i><span
+                                            data-key="company.location">United Arab Emirates</span></li>
+                                    <li><i class="fas fa-certificate text-primary-600 mr-2"></i><span
+                                            data-key="about.certifications">ISO 9001:2015 Quality Management
+                                            System</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-white p-8 rounded-xl shadow-lg">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                                    <i class="fas fa-bullseye text-2xl text-primary-600"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Our Mission</h4>
+                                <p class="text-gray-600" data-key="company.mission">
+                                    Our mission is to provide exceptional service, quality products, and innovative
+                                    solutions to our customers, while maintaining the highest standards of
+                                    integrity, professionalism, and environmental responsibility.
+                                </p>
+                            </div>
+
+                            <div class="bg-white p-8 rounded-xl shadow-lg">
+                                <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                                    <i class="fas fa-handshake text-2xl text-orange-600"></i>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Our Commitment</h4>
+                                <p class="text-gray-600">
+                                    We are committed to building long-term partnerships with our clients by
+                                    delivering consistent quality, competitive pricing, and exceptional customer
+                                    service across all our business segments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-key="nav.contact">Contact
+                        </h2>
+                        <p class="text-xl text-gray-600">Get in touch with us for all your trading and supply needs
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Contact Information -->
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6" data-key="footer.contactInfo">
+                                    Contact Information</h3>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-phone text-primary-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                                        <p class="text-gray-600" data-key="contact.phone">+971 4 299 7911</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope text-primary-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                        <p class="text-gray-600" data-key="contact.email">info@mhkts.ae</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt text-primary-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+                                        <p class="text-gray-600" data-key="contact.address">P.O.Box: 111133, Deira,
+                                            Dubai, United Arab Emirates</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-4">Business Hours</h4>
+                                <div class="space-y-2 text-gray-600">
+                                    <div class="flex justify-between">
+                                        <span>Sunday - Thursday:</span>
+                                        <span>8:00 AM - 6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Friday:</span>
+                                        <span>8:00 AM - 12:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Saturday:</span>
+                                        <span>Closed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="bg-gray-50 p-8 rounded-xl">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6" data-key="contact.getQuote">Get a
+                                Quote</h3>
+
+                            <form id="contactForm" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.name">Name</label>
+                                        <input type="text" id="name" name="name" required
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.email">Email</label>
+                                        <input type="email" id="email" name="email" required
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.phone">Phone</label>
+                                        <input type="tel" id="phone" name="phone"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    </div>
+                                    <div>
+                                        <label for="company" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.company">Company</label>
+                                        <input type="text" id="company" name="company"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="category" class="block text-sm font-medium text-gray-700 mb-2"
+                                        data-key="form.category">Product Category</label>
+                                    <select id="category" name="category"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        <option value="" data-key="form.selectCategory">Select a category</option>
+                                        <option value="ship-chandling" data-key="categories.shipChandling.name">Ship
+                                            Chandling</option>
+                                        <option value="seafood" data-key="categories.seafood.name">Seafood</option>
+                                        <option value="meat" data-key="categories.meat.name">Meat</option>
+                                        <option value="spices" data-key="categories.spices.name">Spices</option>
+                                        <option value="building-materials" data-key="categories.buildingMaterials.name">
+                                            Building Materials</option>
+                                        <option value="oil-gas" data-key="categories.oilGas.name">Oil & Gas</option>
+                                        <option value="scaffolding" data-key="categories.scaffolding.name">
+                                            Scaffolding Materials</option>
+                                        <option value="mep" data-key="categories.mep.name">MEP</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2"
+                                        data-key="form.message">Message</label>
+                                    <textarea id="message" name="message" rows="4" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                                    data-key="contact.sendMessage">
+                                    Send Message
+                                </button>
+                            </form>
+
+                            <div id="formMessage" class="mt-4 p-4 rounded-lg hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers" class="h-12 mb-4">
+                    <p class="text-gray-300 mb-4" data-key="company.name">M.H.K Trading & Ship Chandlers LLC</p>
+                    <p class="text-gray-400 text-sm" data-key="company.tagline">
+                        Reliable Ship Chandler Partner Supplying All Ranges of Provisions
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-key="footer.quickLinks">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors"
+                                data-key="nav.home">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors"
+                                data-key="nav.about">About Us</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition-colors"
+                                data-key="nav.products">Products</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors"
+                                data-key="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-key="footer.contactInfo">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i><span data-key="contact.phone">+971 4 299 7911</span></p>
+                        <p><i class="fas fa-envelope mr-2"></i><span data-key="contact.email">info@mhkts.ae</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span data-key="contact.address">P.O.Box: 111133,
+                                Deira, Dubai, UAE</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400" data-key="footer.copyright">© 2024 M.H.K Trading & Ship Chandlers LLC. All
+                    rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Rice Carousel Functionality
+        let currentRiceSlide = 0;
+        const riceItems = document.querySelectorAll('.rice-item');
+        const riceIndicators = document.querySelectorAll('.rice-indicator');
+        const totalRiceSlides = riceItems.length;
+
+        function showRice(index) {
+            // Hide all slides
+            riceItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.zIndex = '0';
+                item.classList.remove('active');
+            });
+
+            // Update indicators
+            riceIndicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.remove('bg-emerald-300');
+                    indicator.classList.add('bg-emerald-600');
+                } else {
+                    indicator.classList.remove('bg-emerald-600');
+                    indicator.classList.add('bg-emerald-300');
+                }
+            });
+
+            // Show current slide
+            currentRiceSlide = index;
+            riceItems[currentRiceSlide].style.opacity = '1';
+            riceItems[currentRiceSlide].style.zIndex = '10';
+            riceItems[currentRiceSlide].classList.add('active');
+        }
+
+        function nextRice() {
+            let next = (currentRiceSlide + 1) % totalRiceSlides;
+            showRice(next);
+        }
+
+        function previousRice() {
+            let prev = (currentRiceSlide - 1 + totalRiceSlides) % totalRiceSlides;
+            showRice(prev);
+        }
+
+        // Auto-play carousel
+        let riceInterval = setInterval(nextRice, 4000);
+
+        // Pause on hover
+        const riceCarousel = document.getElementById('riceCarousel');
+        if (riceCarousel) {
+            riceCarousel.addEventListener('mouseenter', () => {
+                clearInterval(riceInterval);
+            });
+
+            riceCarousel.addEventListener('mouseleave', () => {
+                riceInterval = setInterval(nextRice, 4000);
+            });
+        }
+
+        // Initialize first slide
+        document.addEventListener('DOMContentLoaded', () => {
+            showRice(0);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grains & Pulses - M.H.K Trading & Ship Chandlers LLC</title>
+    <meta name="description"
+        content="Premium quality grains, pulses, and cereals supplier in UAE. Top varieties of rice, lentils, beans, and grains sourced globally. Wholesale distribution and ship chandling.">
+    <meta name="keywords"
+        content="rice supplier UAE, pulses Dubai, wholesale grains, basmati rice, lentils, beans, cereals, ship chandler grains">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        accent: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        golden: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50" id="header">
+        <!-- Main Navigation -->
+        <div class="bg-primary-600 shadow-none border-b-4 border-golden-400" id="headerContainer">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers"
+                            class="h-12 md:h-14 w-auto">
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-white p-2" id="mobileMenuBtn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center space-x-1">
+                        <a href="index.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent">
+                            Home
+                        </a>
+
+                        <!-- About Dropdown -->
+                        <div class="relative group">
+                            <button
+                                class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                About <i
+                                    class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </button>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <a href="about.html"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-building text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium">Company Overview</div>
+                                            <div class="text-xs text-gray-500">Our story & mission</div>
+                                        </div>
+                                    </a>
+                                    <a href="about.html#leadership"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-users text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium">Leadership Team</div>
+                                            <div class="text-xs text-gray-500">Meet our executives</div>
+                                        </div>
+                                    </a>
+                                    <a href="about.html#certifications"
+                                        class="flex items-center px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-lg transition-all duration-200">
+                                        <i class="fas fa-certificate text-primary-500 mr-3 w-4"></i>
+                                        <div>
+                                            <div class="font-medium">Certifications</div>
+                                            <div class="text-xs text-gray-500">Quality standards</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Dropdown -->
+                        <div class="relative group">
+                            <a href="products.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                Products <i class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            </a>
+                            <div
+                                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="p-2">
+                                    <div class="grid grid-cols-1 gap-1">
+                                        <a href="fresh-provisions.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-apple-alt text-green-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Fresh Provisions</div>
+                                                <div class="text-xs text-gray-500">Fruits, Vegetables & Dairy</div>
+                                            </div>
+                                        </a>
+                                        <a href="grains-pulses.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-utensils text-amber-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Grains & Pulses</div>
+                                                <div class="text-xs text-gray-500">Rice, Pulses & Cereals</div>
+                                            </div>
+                                        </a>
+                                        <a href="spices.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-pepper-hot text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Spices & Seasonings</div>
+                                                <div class="text-xs text-gray-500">Herbs & Blends</div>
+                                            </div>
+                                        </a>
+                                        <a href="meat-poultry.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-drumstick-bite text-red-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Meat & Poultry</div>
+                                                <div class="text-xs text-gray-500">Fresh & Frozen</div>
+                                            </div>
+                                        </a>
+                                        <a href="seafood.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-fish text-blue-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Seafood</div>
+                                                <div class="text-xs text-gray-500">Fresh & Marine Products</div>
+                                            </div>
+                                        </a>
+                                        <a href="processed-foods.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-box-open text-orange-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Processed Foods</div>
+                                                <div class="text-xs text-gray-500">Canned & Packaged Goods</div>
+                                            </div>
+                                        </a>
+                                        <a href="ship-chandling.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-ship text-gray-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium">Ship Chandling</div>
+                                                <div class="text-xs text-gray-500">Vessel Supplies</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Link -->
+                        <a href="logistics.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent" data-key="nav.services">
+                            Services
+                        </a>
+
+                        <a href="contact.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent">
+                            Contact
+                        </a>
+
+                        <!-- CTA Button -->
+                        <a href="contact.html"
+                            class="ml-4 bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold border-2 border-golden-400 hover:bg-golden-50 transition-all duration-300 shadow-md hover:shadow-lg">
+                            Get Quote
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white border-t border-gray-200 shadow-lg hidden" id="mobileMenu">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="space-y-2">
+                    <a href="index.html"
+                        class="block px-4 py-3 text-primary-700 bg-primary-50 rounded-lg font-semibold">Home</a>
+                    <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">About Us</a>
+                    <a href="products.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Products</a>
+                    <a href="services.html"
+                        class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Services</a>
+                    <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg">Contact</a>
+                    <div class="pt-4 border-t border-gray-200">
+                        <a href="contact.html"
+                            class="block bg-accent-500 text-white text-center px-4 py-3 rounded-lg font-semibold">Get
+                            Quote</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-amber-500 to-orange-600 py-20 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="public/images/products/grains.png" alt="Grains & Pulses" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-amber-900/60 to-orange-800/60"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center text-white">
+                    <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                        <i class="fas fa-wheat text-white mr-2"></i>
+                        <span class="text-white text-sm font-medium">Premium Grains & Pulses</span>
+                    </div>
+                    <h1 class="font-display text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Grains, Rice &
+                        Pulses
+                    </h1>
+                    <p class="text-xl text-amber-100 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                        Your reliable source for high-quality staples. From aromatic Basmati rice to protein-rich
+                        pulses, we deliver excellence in every grain.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Overview -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <!-- Content -->
+                        <div data-aos="fade-right">
+                            <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                                The Foundation of Every Meal
+                            </h2>
+                            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                                We understand the importance of quality staples in culinary operations. M.H.K Trading
+                                supplies a comprehensive range of grains and pulses, carefully selected for consistent
+                                quality, taste, and nutritional value.
+                            </p>
+                            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                                Our partnerships with top millers and growers ensure that you receive products free from
+                                impurities and processed to the highest standards.
+                            </p>
+
+                            <!-- Quality Features -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                    <span class="text-gray-700">Sortex Cleaned</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                    <span class="text-gray-700">Aged Basmati</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                    <span class="text-gray-700">Premium Pulses</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                    <span class="text-gray-700">Bulk Supply</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quality Stats -->
+                        <div data-aos="fade-left" data-aos-delay="200">
+                            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8">
+                                <h3 class="font-display text-2xl font-bold text-gray-900 mb-8 text-center">Quality
+                                    Metrics</h3>
+
+                                <div class="grid grid-cols-2 gap-6 mb-8">
+                                    <div class="text-center">
+                                        <div class="text-3xl font-bold text-amber-600 mb-2">99%</div>
+                                        <div class="text-sm text-gray-600">Purity</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-3xl font-bold text-amber-600 mb-2">2yr</div>
+                                        <div class="text-sm text-gray-600">Shelf Life</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-3xl font-bold text-amber-600 mb-2">50+</div>
+                                        <div class="text-sm text-gray-600">Varieties</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-3xl font-bold text-amber-600 mb-2">100%</div>
+                                        <div class="text-sm text-gray-600">Natural</div>
+                                    </div>
+                                </div>
+
+                                <!-- Certifications -->
+                                <div class="space-y-4">
+                                    <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                        <div
+                                            class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="fas fa-seedling text-amber-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Non-GMO</div>
+                                            <div class="text-sm text-gray-600">Genetically unmodified organisms</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
+                                        <div
+                                            class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="fas fa-check-double text-green-600"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Graded Quality</div>
+                                            <div class="text-sm text-gray-600">Uniform size & color</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Grains Collection
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Essential staples for every kitchen, sourced for superior taste and texture.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Rice Varieties -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="w-16 h-16 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
+                                <i class="fas fa-bowl-rice text-2xl text-amber-600"></i>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4">Rice Varieties</h3>
+                            <ul class="space-y-2 text-gray-600 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Premium
+                                    Basmati</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Jasmine
+                                    Rice</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Long Grain
+                                    White</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Sona
+                                    Masoori</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Brown Rice
+                                </li>
+                            </ul>
+                            <p class="text-sm text-gray-500">Aromatic and fluffy rice for perfect dishes.</p>
+                        </div>
+
+                        <!-- Pulses & Lentils -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-16 h-16 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
+                                <i class="fas fa-genderless text-2xl text-amber-600"></i>
+                                <!-- Using genderless circle for generic round shape of lentils/pulses if no better icon -->
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4">Pulses & Lentils</h3>
+                            <ul class="space-y-2 text-gray-600 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Red
+                                    Lentils (Masoor)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Chickpeas
+                                    (Chana)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Yellow
+                                    Moong Dal</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Toor Dal
+                                </li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Black
+                                    Lentils (Urad)</li>
+                            </ul>
+                            <p class="text-sm text-gray-500">Protein-packed pulses essential for balanced diets.</p>
+                        </div>
+
+                        <!-- Flours & Cereals -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-16 h-16 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
+                                <i class="fas fa-bread-slice text-2xl text-amber-600"></i>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-gray-900 mb-4">Flours & Cereals</h3>
+                            <ul class="space-y-2 text-gray-600 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Wheat
+                                    Flour (Atta)</li>
+                                <li class="flex items-center"><i
+                                        class="fas fa-check text-green-500 mr-2"></i>All-Purpose Flour (Maida)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Semolina
+                                    (Sooji)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Oats</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Corn Flour
+                                </li>
+                            </ul>
+                            <p class="text-sm text-gray-500">High-quality flours for baking and cooking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-amber-500 to-orange-600">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center text-white" data-aos="fade-up">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Stock Up on Essentials?</h2>
+                    <p class="text-xl text-amber-100 mb-8 leading-relaxed">
+                        Secure your bulk supply of premium grains and pulses. Reliable delivery and competitive pricing.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center bg-white text-amber-700 hover:bg-amber-50 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                            <i class="fas fa-phone mr-2"></i>
+                            Order Now
+                        </a>
+                        <a href="products.html"
+                            class="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-amber-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                            <i class="fas fa-file-alt mr-2"></i>
+                            View Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="public/images/logo/Logo.png" alt="MHK Trading & Ship Chandlers" class="h-12 mb-4">
+                    <p class="text-gray-300 mb-4">M.H.K Trading & Ship Chandlers LLC</p>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Your trusted partner in maritime supply, trading & industrial solutions since 2014.
+                    </p>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="fresh-provisions.html"
+                                class="text-gray-300 hover:text-white transition-colors">Fresh Provisions</a></li>
+                        <li><a href="grains-pulses.html" class="text-gray-300 hover:text-white transition-colors">Grains
+                                & Pulses</a></li>
+                        <li><a href="meat-poultry.html" class="text-gray-300 hover:text-white transition-colors">Meat &
+                                Poultry</a></li>
+                        <li><a href="seafood.html" class="text-gray-300 hover:text-white transition-colors">Seafood</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+971 4 299 7911</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@mhkts.ae</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Dubai, UAE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 M.H.K Trading & Ship Chandlers LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
