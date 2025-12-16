@@ -156,8 +156,10 @@
 
                         <!-- Products Dropdown -->
                         <div class="relative group">
-                            <a href="products.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
-                                Products <i class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
+                            <a href="products.html"
+                                class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 flex items-center border-b-3 border-transparent">
+                                Products <i
+                                    class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition-transform duration-300"></i>
                             </a>
                             <div
                                 class="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -216,7 +218,9 @@
                         </div>
 
                         <!-- Services Link -->
-                        <a href="logistics.html" class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent" data-key="nav.services">
+                        <a href="logistics.html"
+                            class="nav-item px-4 py-2 text-white hover:text-golden-300 font-medium transition-all duration-300 border-b-3 border-transparent"
+                            data-key="nav.services">
                             Services
                         </a>
 
@@ -261,8 +265,16 @@
     <!-- Main Content -->
     <main class="pt-20">
         <!-- Page Header -->
-        <section class="bg-gradient-to-r from-accent-600 to-accent-800 py-20">
-            <div class="container mx-auto px-4">
+        <section class="relative py-32 overflow-hidden">
+            <!-- Video Background -->
+            <div class="absolute inset-0 z-0">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                    <source src="public/videos/Shipping-video-01.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-primary-900/70"></div>
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10">
                 <div class="max-w-4xl mx-auto text-center text-white">
                     <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                         <i class="fas fa-truck text-white mr-2"></i>
@@ -270,7 +282,7 @@
                     </div>
                     <h1 class="font-display text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Logistics & Supply
                         Chain Management</h1>
-                    <p class="text-xl text-accent-100 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-xl text-primary-100 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
                         Comprehensive logistics solutions with real-time tracking, efficient warehousing, and seamless
                         distribution across the UAE and beyond.
                     </p>
