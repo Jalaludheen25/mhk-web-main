@@ -492,73 +492,92 @@
 
                                         <!-- Product Display Area -->
                                         <div class="flex-1 px-16">
+                                            <style>
+                                                @keyframes float {
+                                                    0% {
+                                                        transform: translateY(0px);
+                                                    }
+
+                                                    50% {
+                                                        transform: translateY(-20px);
+                                                    }
+
+                                                    100% {
+                                                        transform: translateY(0px);
+                                                    }
+                                                }
+
+                                                .animate-float {
+                                                    animation: float 6s ease-in-out infinite;
+                                                }
+                                            </style>
                                             <div id="riceCarousel"
-                                                class="relative h-96 flex items-center justify-center">
+                                                class="relative h-[600px] flex items-center justify-center">
                                                 <!-- Rice Product 1 - Sella 1121 -->
                                                 <div
                                                     class="rice-item active absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
-                                                    <div class="text-center mb-4">
+                                                    <div class="text-center mb-8">
                                                         <span
-                                                            class="inline-block bg-emerald-100 text-emerald-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Premium
+                                                            class="inline-block bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full text-base font-semibold mb-2">Premium
                                                             Quality</span>
                                                     </div>
                                                     <img src="public/images/products/sella-1121-rice.png"
                                                         alt="Sella 1121 Rice"
-                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
-                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Sella 1121 Rice
+                                                        class="h-96 w-auto object-contain mb-8 drop-shadow-2xl animate-float">
+                                                    <h4 class="text-4xl font-bold text-emerald-900 mb-4">Sella 1121 Rice
                                                     </h4>
-                                                    <p class="text-emerald-600 max-w-md">Premium long-grain parboiled
-                                                        rice known for its distinct aroma and taste.</p>
+                                                    <p class="text-xl text-emerald-600 max-w-2xl">Premium long-grain
+                                                        parboiled rice known for its distinct aroma and taste.</p>
                                                 </div>
 
                                                 <!-- Rice Product 2 - Sella 1211 Steam -->
                                                 <div
                                                     class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
-                                                    <div class="text-center mb-4">
+                                                    <div class="text-center mb-8">
                                                         <span
-                                                            class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Steamed</span>
+                                                            class="inline-block bg-green-100 text-green-700 px-6 py-2 rounded-full text-base font-semibold mb-2">Steamed</span>
                                                     </div>
                                                     <img src="public/images/products/sella-1211-steam-rice.png"
                                                         alt="Sella 1211 Steam Rice"
-                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
-                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Sella 1211
+                                                        class="h-96 w-auto object-contain mb-8 drop-shadow-2xl animate-float">
+                                                    <h4 class="text-4xl font-bold text-emerald-900 mb-4">Sella 1211
                                                         Steam Rice</h4>
-                                                    <p class="text-emerald-600 max-w-md">High-quality steamed rice with
-                                                        excellent elongation and texture.</p>
+                                                    <p class="text-xl text-emerald-600 max-w-2xl">High-quality steamed
+                                                        rice with excellent elongation and texture.</p>
                                                 </div>
 
                                                 <!-- Rice Product 3 - Sella PR 11 -->
                                                 <div
                                                     class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
-                                                    <div class="text-center mb-4">
+                                                    <div class="text-center mb-8">
                                                         <span
-                                                            class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Extra
+                                                            class="inline-block bg-blue-100 text-blue-700 px-6 py-2 rounded-full text-base font-semibold mb-2">Extra
                                                             Long</span>
                                                     </div>
                                                     <img src="public/images/products/sella-pr-11-rice.png"
                                                         alt="Sella PR 11 Rice"
-                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
-                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Sella PR 11
+                                                        class="h-96 w-auto object-contain mb-8 drop-shadow-2xl animate-float">
+                                                    <h4 class="text-4xl font-bold text-emerald-900 mb-4">Sella PR 11
                                                         Rice</h4>
-                                                    <p class="text-emerald-600 max-w-md">Non-sticky extra long grain
-                                                        rice suitable for various culinary delights.</p>
+                                                    <p class="text-xl text-emerald-600 max-w-2xl">Non-sticky extra long
+                                                        grain rice suitable for various culinary delights.</p>
                                                 </div>
 
                                                 <!-- Rice Product 4 - Sona Masoori -->
                                                 <div
                                                     class="rice-item absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-all duration-500">
-                                                    <div class="text-center mb-4">
+                                                    <div class="text-center mb-8">
                                                         <span
-                                                            class="inline-block bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-sm font-semibold mb-2">Daily
+                                                            class="inline-block bg-amber-100 text-amber-700 px-6 py-2 rounded-full text-base font-semibold mb-2">Daily
                                                             Use</span>
                                                     </div>
                                                     <img src="public/images/products/sona-masoori-rice.png"
                                                         alt="Sona Masoori Rice"
-                                                        class="h-64 w-auto object-contain mb-6 drop-shadow-2xl">
-                                                    <h4 class="text-2xl font-bold text-emerald-900 mb-2">Sona Masoori
+                                                        class="h-96 w-auto object-contain mb-8 drop-shadow-2xl animate-float">
+                                                    <h4 class="text-4xl font-bold text-emerald-900 mb-4">Sona Masoori
                                                         Rice</h4>
-                                                    <p class="text-emerald-600 max-w-md">Light and aromatic medium-grain
-                                                        rice, perfect for everyday meals.</p>
+                                                    <p class="text-xl text-emerald-600 max-w-2xl">Light and aromatic
+                                                        medium-grain rice, perfect for everyday meals.</p>
                                                 </div>
                                             </div>
                                         </div>
