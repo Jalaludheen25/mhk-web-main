@@ -107,7 +107,7 @@
 
 
         <!-- Main Navigation -->
-        <div class="bg-primary-900 shadow-none border-b-4 border-golden-400" id="headerContainer">
+        <div class="bg-primary-900/90 backdrop-blur-md shadow-lg border-b-4 border-golden-400" id="headerContainer">
             <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between h-20">
                     <!-- Logo -->
@@ -248,6 +248,14 @@
                                                     Vessel Supplies</div>
                                             </div>
                                         </a>
+                                        <a href="building-materials.html"
+                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200">
+                                            <i class="fas fa-hard-hat text-orange-500 mr-3 w-4"></i>
+                                            <div>
+                                                <div class="font-medium" data-key="nav.buildingMaterials">Building Materials</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.buildingMaterialsDesc">Construction Supplies</div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -313,26 +321,12 @@
                     <source src="public/videos/hero-bg.mp4" type="video/mp4">
                 </video>
 
-                <!-- Simple Dark Overlay for Text Visibility -->
-                <div class="absolute inset-0 bg-black/30"></div>
+                <!-- Overlay Removed -->
             </div>
 
             <!-- Content with Higher Z-Index REMOVED for clean video look -->
             <div class="relative z-30 h-full flex items-center justify-center">
-                <div class="text-center px-4 max-w-5xl" data-aos="fade-up">
-                    <h1
-                        class="font-display text-4xl md:text-6xl font-bold text-white/80 mb-4 tracking-wide shadow-black drop-shadow-lg">
-                        Premium Traders and Ship Chandlers
-                    </h1>
-                    <h2
-                        class="text-2xl md:text-3xl font-light text-white/70 mb-6 tracking-wider shadow-black drop-shadow-md">
-                        Global Food Excellence
-                    </h2>
-                    <p
-                        class="text-lg md:text-xl text-white/60 max-w-3xl mx-auto leading-relaxed font-light shadow-black drop-shadow-sm">
-                        Your Trusted Partner in Global Food Trading, Maritime Supply & Industrial Solutions
-                    </p>
-                </div>
+                <div class="text-center px-4 max-w-5xl" data-aos="fade-up"></div>
             </div>
         </section>
 
@@ -358,6 +352,7 @@
                                 </div>
                             </div>
                         </div>
+
 
                         <!-- Main Title -->
                         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
@@ -810,17 +805,10 @@
                         <div class="p-6">
                             <div class="flex items-center mb-4">
                                 <i class="fas fa-hard-hat text-orange-600 text-2xl mr-3"></i>
-                                <a href="building-materials.html">
-                                    <h3
-                                        class="font-display text-xl font-bold text-gray-900 hover:text-orange-600 transition-colors cursor-pointer">
-                                        Building Materials</h3>
-                                </a>
                             </div>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
                                 Custom made Steel rebar, Alloy steel, Stainless steel, Tool steel, Mild steel Etc.
                             </p>
-                            <a href="building-materials.html"
-                                class="text-orange-600 font-medium hover:text-orange-800 text-sm">Learn More &rarr;</a>
                         </div>
                     </div>
 
@@ -1038,96 +1026,93 @@
                                 <h4 class="font-semibold text-gray-900 mb-4">Business Hours</h4>
                                 <div class="space-y-2 text-gray-600">
                                     <div class="flex justify-between">
-                                        <span>Sunday - Thursday:</span>
-                                        <span>8:00 AM - 6:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Friday:</span>
-                                        <span>8:00 AM - 12:00 PM</span>
+                                        <span>Monday - Friday:</span>
+                                        <span>9:00 AM - 6:00 PM</span>
                                     </div>
                                     <div class="flex justify-between">
                                         <span>Saturday:</span>
-                                        <span>Closed</span>
+                                        <span>9:00 AM - 2:00 PM</span>
                                     </div>
+
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Contact Form -->
-                        <div class="bg-gray-50 p-8 rounded-xl">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-6" data-key="contact.getQuote">Get a
-                                Quote</h3>
+                            <!-- Contact Form -->
+                            <div class="bg-gray-50 p-8 rounded-xl">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6" data-key="contact.getQuote">Get a
+                                    Quote</h3>
 
-                            <form id="contactForm" class="space-y-6">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2"
-                                            data-key="form.name">Name</label>
-                                        <input type="text" id="name" name="name" required
-                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                <form id="contactForm" class="space-y-6">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2"
+                                                data-key="form.name">Name</label>
+                                            <input type="text" id="name" name="name" required
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2"
+                                                data-key="form.email">Email</label>
+                                            <input type="email" id="email" name="email" required
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        </div>
                                     </div>
-                                    <div>
-                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2"
-                                            data-key="form.email">Email</label>
-                                        <input type="email" id="email" name="email" required
-                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2"
+                                                data-key="form.phone">Phone</label>
+                                            <input type="tel" id="phone" name="phone"
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        </div>
+                                        <div>
+                                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2"
+                                                data-key="form.company">Company</label>
+                                            <input type="text" id="company" name="company"
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2"
-                                            data-key="form.phone">Phone</label>
-                                        <input type="tel" id="phone" name="phone"
+                                        <label for="category" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.category">Product Category</label>
+                                        <select id="category" name="category"
                                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                            <option value="" data-key="form.selectCategory">Select a category</option>
+                                            <option value="ship-chandling" data-key="categories.shipChandling.name">Ship
+                                                Chandling</option>
+                                            <option value="seafood" data-key="categories.seafood.name">Seafood</option>
+                                            <option value="meat" data-key="categories.meat.name">Meat</option>
+                                            <option value="spices" data-key="categories.spices.name">Spices</option>
+                                            <option value="building-materials"
+                                                data-key="categories.buildingMaterials.name">
+                                                Building Materials</option>
+                                            <option value="oil-gas" data-key="categories.oilGas.name">Oil & Gas</option>
+                                            <option value="scaffolding" data-key="categories.scaffolding.name">
+                                                Scaffolding Materials</option>
+                                            <option value="mep" data-key="categories.mep.name">MEP</option>
+                                        </select>
                                     </div>
+
                                     <div>
-                                        <label for="company" class="block text-sm font-medium text-gray-700 mb-2"
-                                            data-key="form.company">Company</label>
-                                        <input type="text" id="company" name="company"
-                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2"
+                                            data-key="form.message">Message</label>
+                                        <textarea id="message" name="message" rows="4" required
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
                                     </div>
-                                </div>
 
-                                <div>
-                                    <label for="category" class="block text-sm font-medium text-gray-700 mb-2"
-                                        data-key="form.category">Product Category</label>
-                                    <select id="category" name="category"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-                                        <option value="" data-key="form.selectCategory">Select a category</option>
-                                        <option value="ship-chandling" data-key="categories.shipChandling.name">Ship
-                                            Chandling</option>
-                                        <option value="seafood" data-key="categories.seafood.name">Seafood</option>
-                                        <option value="meat" data-key="categories.meat.name">Meat</option>
-                                        <option value="spices" data-key="categories.spices.name">Spices</option>
-                                        <option value="building-materials" data-key="categories.buildingMaterials.name">
-                                            Building Materials</option>
-                                        <option value="oil-gas" data-key="categories.oilGas.name">Oil & Gas</option>
-                                        <option value="scaffolding" data-key="categories.scaffolding.name">
-                                            Scaffolding Materials</option>
-                                        <option value="mep" data-key="categories.mep.name">MEP</option>
-                                    </select>
-                                </div>
+                                    <button type="submit"
+                                        class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                                        data-key="contact.sendMessage">
+                                        Send Message
+                                    </button>
+                                </form>
 
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2"
-                                        data-key="form.message">Message</label>
-                                    <textarea id="message" name="message" rows="4" required
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
-                                </div>
-
-                                <button type="submit"
-                                    class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-                                    data-key="contact.sendMessage">
-                                    Send Message
-                                </button>
-                            </form>
-
-                            <div id="formMessage" class="mt-4 p-4 rounded-lg hidden"></div>
+                                <div id="formMessage" class="mt-4 p-4 rounded-lg hidden"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 

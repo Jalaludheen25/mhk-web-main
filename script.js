@@ -311,59 +311,84 @@ function initializeHeader() {
 }
 
 // Video and Image rotation functionality
+// Video and Image rotation functionality
 function initializeVideoRotation() {
     const video = document.getElementById('heroVideo');
     const image = document.getElementById('heroImage');
-    const videos = [
-        'public/videos/hero-bg.mp4',
-        'public/videos/hero-bg-4.mp4',
-        'public/videos/Shipping-video-01.mp4'
+
+    // Define the playlist with types
+    const playlist = [
+        { type: 'image', src: 'public/images/products/1.jpg', duration: 5000 },
+        { type: 'video', src: 'public/videos/Shipping-video-01.mp4' },
+        { type: 'image', src: 'public/images/products/shipping-02.jpg', duration: 5000 },
+        { type: 'video', src: 'public/videos/Shipping-video-01.mp4' }
     ];
 
     let currentIndex = 0;
+    let rotationTimeout; // To track timeouts for images
 
-    function playNextVideo() {
-        currentIndex = (currentIndex + 1) % videos.length;
-        console.log('Playing next video:', videos[currentIndex]);
+    function playCurrentItem() {
+        const item = playlist[currentIndex];
+        console.log('Playing item:', item);
 
-        // Fade out slightly for transition if desired, but direct cut is fine
-        video.src = videos[currentIndex];
-        video.play().catch(e => {
-            console.error('Video play error:', e);
-            // Try next one if this fails
-            setTimeout(playNextVideo, 1000);
-        });
+        if (item.type === 'image') {
+            // Show image, hide video
+            if (video) {
+                video.style.opacity = '0';
+                setTimeout(() => video.pause(), 500); // Pause after fade out
+            }
+            if (image) {
+                image.src = item.src;
+                // Small delay to allow image to load before fading in (optional, but good for smoother transitions)
+                // For now, just setting opacity immediately as current CSS handles transition of 1s
+                image.style.opacity = '1';
+
+                // Schedule next item
+                if (rotationTimeout) clearTimeout(rotationTimeout);
+                rotationTimeout = setTimeout(playNextItem, item.duration);
+            }
+        } else if (item.type === 'video') {
+            // Show video, hide image
+            if (image) image.style.opacity = '0';
+            if (video) {
+                video.src = item.src;
+                video.load(); // Ensure new source is loaded
+
+                // Play logic
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        video.style.opacity = '1';
+                    }).catch(error => {
+                        console.error('Video play error:', error);
+                        // If video fails, skip to next item immediately
+                        playNextItem();
+                    });
+                }
+            }
+        }
+    }
+
+    function playNextItem() {
+        currentIndex = (currentIndex + 1) % playlist.length;
+        playCurrentItem();
     }
 
     if (video) {
-        // Initialize first video
-        video.src = videos[0];
+        // Event listener for video end
+        // IMPORTANT: We need to remove old listeners if re-initializing, 
+        // but since this runs once on load, it's fine.
+        video.addEventListener('ended', playNextItem);
 
-        // Event listeners
-        video.addEventListener('ended', playNextVideo);
-
-        video.addEventListener('playing', function () {
-            // Once playing, ensure video is visible and image is hidden
-            video.style.opacity = '1';
-            if (image) image.style.opacity = '0';
-        });
-
+        // Handle video errors
         video.addEventListener('error', function (e) {
-            console.error('Video loading error:', e);
-            // Skip to next on error
-            playNextVideo();
+            console.error('Video error:', e);
+            playNextItem();
         });
-
-        // Attempt initial play
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                console.log('Autoplay prevented or failed:', error);
-                // Fallback to image if autoplay is blocked completely
-                if (image) image.style.opacity = '1';
-            });
-        }
     }
+
+    // Start the rotation
+    playCurrentItem();
 }
 
 // Contact form functionality
