@@ -58,7 +58,7 @@ const translations = {
         "nav.leadershipDesc": "Meet our executives",
         "nav.certifications": "Certifications",
         "nav.certificationsDesc": "Quality standards",
-        "home.hero.title": "PREMIUM FOOD TRADING & SHIP CHANDLERS",
+        "home.hero.title": "Premium Traders and Ship Chandlers",
         "home.hero.subtitle": "Your Trusted Partner in Global Food Trading, Maritime Supply & Industrial Solutions",
         "home.hero.cta": "Explore Solutions",
         "company.tagline": "Global Food Excellence",
