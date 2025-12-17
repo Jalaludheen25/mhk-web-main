@@ -248,14 +248,6 @@
                                                     Vessel Supplies</div>
                                             </div>
                                         </a>
-                                        <a href="building-materials.html"
-                                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200">
-                                            <i class="fas fa-hard-hat text-orange-500 mr-3 w-4"></i>
-                                            <div>
-                                                <div class="font-medium" data-key="nav.buildingMaterials">Building Materials</div>
-                                                <div class="text-xs text-gray-500" data-key="nav.buildingMaterialsDesc">Construction Supplies</div>
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -332,8 +324,12 @@
 
         <!-- New About / Intro Section (formerly Hero Content) -->
         <section id="about-intro"
-            class="py-20 bg-gradient-to-br from-gray-50 via-amber-50/30 to-golden-100/40 relative overflow-hidden">
-            <div class="container mx-auto px-4">
+            class="pt-10 pb-20 bg-gradient-to-br from-gray-50 via-amber-50/30 to-golden-100/40 relative overflow-hidden">
+            <!-- Dark Blue Top Shade -->
+            <div
+                class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 to-transparent pointer-events-none z-0">
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
                 <div class="max-w-6xl mx-auto">
                     <!-- Hero Content Moved Here -->
                     <div class="text-center space-y-8">
@@ -385,24 +381,7 @@
 
                         <!-- Key Value Propositions -->
                         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
-                                    <div
-                                        class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-ship text-accent-600 text-xl"></i>
-                                    </div>
-                                    <div class="text-primary-900 font-bold text-lg">500+ Vessels</div>
-                                    <div class="text-gray-500 text-sm">Served Globally</div>
-                                </div>
-
-                                <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
-                                    <div
-                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-clock text-blue-600 text-xl"></i>
-                                    </div>
-                                    <div class="text-primary-900 font-bold text-lg">24/7 Support</div>
-                                    <div class="text-gray-500 text-sm">Always Available</div>
-                                </div>
+                            <div class="flex justify-center gap-6 max-w-4xl mx-auto">
 
                                 <div class="text-center group p-4 rounded-xl hover:bg-gray-50 transition-colors">
                                     <div
@@ -461,7 +440,7 @@
         </section>
 
         <!-- Premium Food Products Section (Green Theme) -->
-        <section class="py-20 bg-emerald-50 border-t border-emerald-100">
+        <section class="pt-10 pb-20 bg-emerald-50 border-t border-emerald-100">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="text-emerald-600 font-bold tracking-wider uppercase mb-2 block">Our Specialties</span>
@@ -759,7 +738,7 @@
         </section>
 
         <!-- Industrial Solutions Section (Distinct Theme) -->
-        <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <section class="pt-10 pb-20 bg-gray-50 border-t border-gray-200">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="text-gray-500 font-bold tracking-wider uppercase mb-2 block">Industrial Division</span>
@@ -796,21 +775,27 @@
                     </div>
 
                     <!-- 5. Building Materials -->
-                    <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div class="relative overflow-hidden h-56">
-                            <img src="public/images/products/building.jpg" alt="Building Materials"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-4">
-                                <i class="fas fa-hard-hat text-orange-600 text-2xl mr-3"></i>
+                    <!-- 5. Building Materials -->
+                    <a href="building-materials.html" class="block" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                            <div class="relative overflow-hidden h-56">
+                                <img src="public/images/products/construction-materials.png" alt="Building Materials"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                             </div>
-                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                                Custom made Steel rebar, Alloy steel, Stainless steel, Tool steel, Mild steel Etc.
-                            </p>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Building Materials</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Premium construction materials including steel, cement, and specialized structural
+                                    components.
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                                    View Catalog <i class="fas fa-arrow-right ml-2"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- 6. Scaffolding -->
                     <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
@@ -841,7 +826,7 @@
         </section>
 
         <!-- Mission Section -->
-        <section class="py-20 bg-primary-600 text-white">
+        <section class="pt-10 pb-20 bg-primary-600 text-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-4xl md:text-5xl font-bold mb-8">Our Mission</h2>
@@ -855,7 +840,7 @@
         </section>
 
         <!-- Certifications Section -->
-        <section class="py-20 bg-white">
+        <section class="pt-10 pb-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-key="home.certifications.title">
@@ -894,7 +879,7 @@
             </div>
         </section>
         <!-- About Section -->
-        <section id="about" class="py-20 bg-gray-50">
+        <section id="about" class="pt-10 pb-20 bg-gray-50">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
@@ -968,7 +953,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white">
+        <section id="contact" class="pt-10 pb-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
