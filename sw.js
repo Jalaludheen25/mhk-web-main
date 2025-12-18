@@ -1,5 +1,5 @@
 // Service Worker for MHK Website
-const CACHE_NAME = 'mhk-website-v1';
+const CACHE_NAME = 'mhk-website-v2';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -11,33 +11,33 @@ const urlsToCache = [
 ];
 
 // Install event
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(function(cache) {
+            .then(function (cache) {
                 return cache.addAll(urlsToCache);
             })
     );
 });
 
 // Fetch event
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request)
-            .then(function(response) {
+            .then(function (response) {
                 // Return cached version or fetch from network
                 return response || fetch(event.request);
             }
-        )
+            )
     );
 });
 
 // Activate event
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
     event.waitUntil(
-        caches.keys().then(function(cacheNames) {
+        caches.keys().then(function (cacheNames) {
             return Promise.all(
-                cacheNames.map(function(cacheName) {
+                cacheNames.map(function (cacheName) {
                     if (cacheName !== CACHE_NAME) {
                         return caches.delete(cacheName);
                     }
