@@ -234,8 +234,10 @@
                                             class="flex items-center px-4 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-700 rounded-lg transition-all duration-200">
                                             <i class="fas fa-hard-hat text-yellow-500 mr-3 w-4"></i>
                                             <div>
-                                                <div class="font-medium" data-key="nav.buildingMaterials">Building Materials</div>
-                                                <div class="text-xs text-gray-500" data-key="nav.buildingMaterialsDesc">Construction Supplies</div>
+                                                <div class="font-medium" data-key="nav.buildingMaterials">Building
+                                                    Materials</div>
+                                                <div class="text-xs text-gray-500" data-key="nav.buildingMaterialsDesc">
+                                                    Construction Supplies</div>
                                             </div>
                                         </a>
                                     </div>
@@ -519,10 +521,75 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Marine Safety Equipment -->
+                    <a href="ship-chandling.html#supplies" class="block">
+                        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                            data-category="maritime" data-aos="fade-up" data-aos-delay="420">
+                            <div class="relative overflow-hidden h-56">
+                                <img src="public/images/products/marine-safety.jpg" alt="Marine Safety"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Marine Safety</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    SOLAS compliant safety equipment including life rafts, jackets, and firefighting
+                                    gear.
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                                    View Catalog <i class="fas fa-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Engine Stores -->
+                    <a href="ship-chandling.html#supplies" class="block">
+                        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                            data-category="maritime" data-aos="fade-up" data-aos-delay="440">
+                            <div class="relative overflow-hidden h-56">
+                                <img src="public/images/products/engine-stores.jpg" alt="Engine Stores"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Engine Stores</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Complete range of engine spares, lubricants, tools, and maintenance equipment.
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                                    View Catalog <i class="fas fa-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Deck Stores -->
+                    <a href="ship-chandling.html#supplies" class="block">
+                        <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                            data-category="maritime" data-aos="fade-up" data-aos-delay="460">
+                            <div class="relative overflow-hidden h-56">
+                                <img src="public/images/products/deck-stores.jpg" alt="Deck Stores"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-gray-900 mb-3">Deck Stores</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    High-quality deck supplies, ropes, paints, and anchoring equipment for all vessels.
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                                    View Catalog <i class="fas fa-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
                     <!-- Building Materials -->
                     <a href="building-materials.html" class="block">
                         <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
-                            data-category="industrial" data-aos="fade-up" data-aos-delay="450">
+                            data-category="industrial construction" data-aos="fade-up" data-aos-delay="450">
                             <div class="relative overflow-hidden h-56">
                                 <img src="public/images/products/construction-materials.png" alt="Building Materials"
                                     class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
@@ -562,10 +629,9 @@
                         </div>
                     </a>
 
-                    <!-- Scaffolding Materials -->
                     <a href="scaffolding.html" class="block">
                         <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group cursor-pointer"
-                            data-category="industrial" data-aos="fade-up" data-aos-delay="550">
+                            data-category="industrial construction" data-aos="fade-up" data-aos-delay="550">
                             <div class="relative overflow-hidden h-56">
                                 <img src="public/images/products/scaffolding.jpg" alt="Scaffolding Materials"
                                     class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
@@ -817,7 +883,7 @@
                     // Filter products
                     productCards.forEach(card => {
                         const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
+                        if (filter === 'all' || category.includes(filter)) {
                             card.style.display = 'block';
                             card.classList.add('fade-in-up');
                         } else {
