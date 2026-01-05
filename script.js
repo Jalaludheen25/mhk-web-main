@@ -10,7 +10,7 @@ const translations = {
         "company.name": "M.H.K Trading & Ship Chandlers LLC",
         "company.tagline": "Reliable Ship Chandler Partner Supplying All Ranges of Provisions",
         "company.founded": "Founded in 2014",
-        "company.founder": "Founded by Hariharasudan Gnanasekaran",
+        "company.founder": "Established in 2014",
         "company.location": "United Arab Emirates",
         "company.mission": "Our mission is to provide exceptional service, quality products, and innovative solutions to our customers, while maintaining the highest standards of integrity, professionalism, and environmental responsibility.",
         "contact.phone": "+971 4 299 7911",
@@ -75,7 +75,7 @@ const translations = {
         "home.certifications.premium": "Premium Quality",
         "about.title": "About MHK",
         "about.history": "M H K Trading & Ship Chandlers LLC is a reputable trading company based in the United Arab Emirates, specializing in providing top-quality products and services to the maritime industry, Industrial & Construction Materials, Consumer Goods, Food & Beverages. Since its inception in 2014, our company has been committed to excellence, reliability, and customer satisfaction.",
-        "about.growth": "Founded by Hariharasudan Gnanasekaran, our company has grown steadily over the years, establishing itself as a trusted partner for ship owners, operators, and suppliers. With a strong foundation in trading and ship chandling, we have expanded our portfolio to cater to the diverse needs of the maritime, & general trading sector.",
+        "about.growth": "Our company has grown steadily over the years, establishing itself as a trusted partner for ship owners, operators, and suppliers. With a strong foundation in trading and ship chandling, we have expanded our portfolio to cater to the diverse needs of the maritime, & general trading sector.",
         "about.certifications": "ISO 9001:2015 Quality Management System",
         "form.name": "Name",
         "form.email": "Email",
@@ -328,12 +328,11 @@ function initializeVideoRotation() {
     const video = document.getElementById('heroVideo');
     const image = document.getElementById('heroImage');
 
-    // Define the playlist with types
+    // Define the playlist with types - rotating between three videos
     const playlist = [
-        { type: 'image', src: 'public/images/products/1.jpg', duration: 5000 },
         { type: 'video', src: 'public/videos/Shipping-video-01.mp4' },
-        { type: 'image', src: 'public/images/products/shipping-02.jpg', duration: 5000 },
-        { type: 'video', src: 'public/videos/Shipping-video-01.mp4' }
+        { type: 'video', src: 'public/videos/hero-bg.mp4' },
+        { type: 'video', src: 'public/videos/products.mp4' }
     ];
 
     let currentIndex = 0;
